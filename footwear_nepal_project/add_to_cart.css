@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+  --black: #2c2c54;
+  --orange: #ff9f1a;
+  --light-grey: #f9f9f9;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+body {
+  background: var(--light-grey);
+  line-height: 1.6;
+  color: var(--black);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+header .logo {
+  height: 65px;
+  width: 65px;
+}
+
+header .icons a {
+  font-size: 2rem;
+  color: var(--black);
+  margin-left: 1rem;
+  transition: color 0.3s;
+}
+
+header .icons a:hover {
+  color: var(--orange);
+}
+
+h1 {
+  margin-top: 7rem;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--black);
+}
+
+.cart {
+  padding: 2rem 9%;
+  background: var(--light-grey);
+  text-align: center;
+}
+
+.cart .box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  gap: 1.5rem;
+}
+
+.cart .box img {
+  height: 100px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cart .box .content h3 {
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.cart .box .content .price {
+  font-size: 1.6rem;
+  color: var(--orange);
+  margin-top: 0.5rem;
+}
+
+.cart p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.footer {
+  background: var(--light-grey);
+  padding: 1rem 9%;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.footer .credit {
+  font-size: 1.4rem;
+  color: #999;
+}
+
+.footer .credit span {
+  color: var(--orange);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .cart .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
